@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+
+int main()
+{
+	
+	int number, summary = 0;
+	cout << "Please enter the number:" << endl;
+	cin >> number;
+	
+	
+	
+	for(int i = 1; i <= number; i++)
+	{
+		int outcome = 0;
+		outcome = number - i;
+		
+		summary *= outcome;
+	}
+	
+	summary = number * summary * 2 * 1;
+	
+	cout << summary << endl;
+
+	system("pause");
+
+	return 0;
+
+
+}
+

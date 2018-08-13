@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+
+class Auto
+{
+	private:
+	int _a;
+	public:
+	void setValue(int x);
+	void showValue();
+};
+
+void Auto::setValue(int x)
+{
+	_a = x;
+}
+
+void Auto::showValue()
+{
+	cout << _a << endl;
+}
+
+
+int main()
+{
+	
+	Auto myCar;
+	
+	myCar.setValue(5);
+	myCar.showValue();
+
+	system("pause");
+
+	return 0;
+
+
+}
+

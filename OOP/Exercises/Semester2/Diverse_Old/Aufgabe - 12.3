@@ -1,0 +1,57 @@
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <11.h>
+#include <12.h>
+#include <13.h>
+#include <15.h>
+
+using namespace std;
+
+
+void encrypt(char *MyWord, int ArraySize, int Modifier)
+{
+	for(int i = 0; i < ArraySize; i++)
+	{
+		MyWord[i] += Modifier;
+	}
+}
+
+void decrypt(char *MyWord, int ArraySize, int Modifier)
+{
+	for(int i = 0; i < ArraySize; i++)
+	{
+		MyWord[i] -= Modifier;
+	}
+}
+
+int main()
+{
+	const int ArraySize = 13;
+	int MyKey;
+	char MyWord[ArraySize];
+	
+	cout << "Please enter your word" << endl;
+	cin >> MyWord;
+	
+	cout << "Please enter your key" << endl;
+	cin >> MyKey;
+	
+	
+
+	
+	encrypt(MyWord, ArraySize, MyKey);
+	cout << "The encrypted word is: " << MyWord << endl;
+	
+	decrypt(MyWord, ArraySize, MyKey);
+	cout << "The decrypted word is: " << MyWord << endl;
+	
+	
+
+	system("pause");
+
+	return 0;
+
+
+}
+

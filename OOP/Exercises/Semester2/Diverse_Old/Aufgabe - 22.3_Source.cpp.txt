@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+#include <Auto.h>
+
+using namespace std;
+
+
+
+
+
+
+
+
+int main()
+{
+
+
+	system("pause");
+
+	return 0;
+
+
+}
+

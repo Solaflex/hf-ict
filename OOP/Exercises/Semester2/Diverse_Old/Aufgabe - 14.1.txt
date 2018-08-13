@@ -1,0 +1,54 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+
+int main()
+{
+	
+	int usernumber, randomnumber;
+	string youwanttocontinue = "";
+	
+	
+	
+	do
+	{
+		randomnumber = rand() % 100 + 1;
+		
+		for(int i = 0; i < 6; i++)
+		{
+			cout << "Please enter your number" << endl;
+			cin >> usernumber;
+			
+			if(usernumber < randomnumber)
+			{
+				cout << "Your number is smaller then the random number" << endl;
+			}
+			else if (usernumber > randomnumber)
+			{
+				cout << "Your number is bigger then the random number" << endl;
+			}
+			
+			if(usernumber == randomnumber)
+			{
+				cout << "Congratulation, you won this game!! The random number was " << randomnumber << endl;
+			}
+			else if(i == 5)
+			{
+				cout << "I am sorry, you lost this game. The random number was " << randomnumber << endl;
+			}			
+		}
+		
+		cout << "Do you want to play the game again. Please answer yes or no" << endl;
+		cin >> youwanttocontinue;
+	} while (youwanttocontinue == "yes");
+
+	system("pause");
+
+	return 0;
+
+
+}
+

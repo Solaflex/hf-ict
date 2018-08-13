@@ -1,0 +1,32 @@
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include <11.h>
+#include <12.h>
+#include <13.h>
+#include <15.h>
+
+using namespace std;
+
+
+int main()
+{
+	int a(6), b(2); // Initialisierung
+	int *pa, *pb; // Initialisierung
+	pa = &a; // Pointer pa zeigt auf die Variable a
+	*pa += 1; // Pointer pa und somit Variable a erhöht den Wert um 1
+	cout << "a = ?" << a << endl; // Ausgabe 7
+	
+	pb = &b; // Pointer pb zeigt auf die Variable b
+	*pb = *pb**pa; // Pointer pb und somit Variable b ist gleich 2*7=14
+	b = b++ + ++a; // b = 14 + 8, anschliessend b + 1
+	cout << "b = ?" << b << endl;
+	
+
+	system("pause");
+
+	return 0;
+
+
+}
+

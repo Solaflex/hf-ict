@@ -1,0 +1,54 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+void output(int **myArray, int arraySize)
+{
+	for (int i = 0; i < arraySize; i++)
+	{
+		for (int y = 0; y < arraySize; y++)
+		{
+			cout << myArray[i][y] << " ";
+		}
+		cout << endl;
+	}
+}
+
+int main()
+{
+	int arraySize;
+	cout << "Please enter a number" << endl;
+	cin >> arraySize;
+
+	int **myArray;
+	myArray = new int*[arraySize];
+
+	for (int i = 0; i < arraySize; i++)
+	{
+		myArray[i] = new int[arraySize];
+		for (int y = 0; y < arraySize; y++)
+		{
+			myArray[i][y] = (i + 1)*(y + 1);
+		}
+	}
+
+	output(myArray, arraySize);
+	
+	for(int i = 0; i<arraySize; i++)
+	{
+		for(int y = 0; y < arraySize; y++)
+		{
+			//delete myArray[i][y];
+		}
+		delete myArray[i];
+	}
+
+	system("pause");
+
+	return 0;
+
+
+}
+
