@@ -1,0 +1,8 @@
+<!-- ant build file besteht aus targets, default ist das default target -->
+<project name="JARBuilder" default="archive"> 
+	<target name="archive">
+		<jar destfile="stat.jar"
+			basedir="bin">
+		</jar>
+	</target>
+</project>
