@@ -4,9 +4,9 @@ public class Statistics {
 	private double[] numbers = null;
 	private int last = 0;
 
-	public Statistics(int size) {
+	public Statistics(int size) throws Exception {
 		if (size <= 0) {
-			throw new IllegalArgumentException("size must be > 0");
+			throw new Exception("size must be > 0");
 		}
 		numbers = new double[size];
 	}
