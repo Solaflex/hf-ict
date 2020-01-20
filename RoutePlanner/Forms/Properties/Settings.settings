@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Forms.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Cities" Type="System.String" Scope="User">
+      <Value Profile="(Default)">data/cities.txt</Value>
+    </Setting>
+    <Setting Name="Links" Type="System.String" Scope="User">
+      <Value Profile="(Default)">data/links.txt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
